@@ -1,0 +1,467 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="ak.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+       <script src="./js/ak.js"></script>
+         
+
+    </head>
+    <body>
+<div class="container">
+        <div class="Header"> 
+               <!-- <div class="HeaderSection1"> -->
+            <div class="HeaderIcons" id="btnsid" >
+                        <span style="font-size:18px;cursor:pointer;color: white" onclick="openNav()">&#9776; QUALIS</span>
+                        <!-- <button class="w3-button w3-teal w3-small" onclick="open()">☰</button> -->
+                    <!-- <i class="fa fa-bars" onclick="open()" style="margin-left:3%;color: white;padding: 3px"></i> -->
+                    <!-- <p class="qualis">QUALIS</p> -->
+                <!-- <div>  <i class="fa fa-user-circle-o" style="font-size:24px;float:right;margin-right:3%;padding-top:3%;color: white"></i></div>   -->
+                <!-- <div class="sidebar-block" style="display:none" id="mySidebar">
+                                <button onclick="close()" class="w3-bar-item w3-button w3-large">Close &times;</button>
+                                <a href="#Link 1" class="bar-item">Link 1</a>
+                                <a href="#Link2" class="bar-item">Link 2</a>
+                                <a href="#Link3" class="bar-item">Link 3</a>
+                              </div> -->
+                              <div id="mySidenav" class="sidenav">
+                                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                                        <a href="#">About</a>
+                                        <a href="#">Services</a>
+                                        <a href="#">Clients</a>
+                                        <a href="#">Contact</a>
+                                      </div>
+            </div>
+            <div class="HeaderSection2" id="browseid" onclick="active1()">
+            <div class="browseblock browseblock1">
+                
+                <p class="BlockElements">BROWSE</p>
+           </div>
+           <div class="browseblock browseblock2">
+              
+               <p class="BlockElements">FAVORITES</p>
+           </div>
+           <div class="browseblock browseblock3 active1">
+              
+               <p class="BlockElements">CREATE</p>
+           </div>
+          
+           </div>
+             <!-- </div>  -->
+        <div class="HeaderSection3" id="myId" onclick="active()"> 
+             <div class="block">
+                <p class="BlockElements2">RECOM</p>
+            </div>
+            <div class="block active">
+                <p class="BlockElements2">FINANCE</p>
+            </div>
+            <div class="block">
+                <p class="BlockElements2">MARKETING</p>
+            </div>
+            <div class="block">
+                <p class="BlockElements2">SALES</p>
+            </div>
+            <div class="block">
+                <p class="BlockElements2">CLOUD</p>
+            </div>
+            <div class="block">
+                    <div class="dropdown">
+                <p class="BlockElements2 BlockElements3" onclick="drop()">…</p>
+                <div id="mydropdown" class="drop-down-content">
+                        <a href="#home">Home</a>
+                           <a href="#about">About</a>
+                        <a href="#contact">Contact</a>
+                        
+                </div>
+                </div>
+               
+               
+            </div>
+        </div>
+        
+        <script>
+//                 function drop() {
+//     document.getElementById("mydropdown").classList.toggle("show");
+// }
+
+// Close the dropdown if the user clicks outside of it
+// window.onclick = function(event) {
+//   if (!event.target.matches('.BlockElements2')) {
+
+//     var dropdowns = document.getElementsByClassName("drop-down-content");
+//     var i;
+//     for (i = 0; i < dropdowns.length; i++) {
+//       var openDropdown = dropdowns[i];
+//       if (openDropdown.classList.contains('show')) {
+//         openDropdown.classList.remove('show');
+//       }
+//     }
+//   }
+// }
+        </script>
+    
+        <div class="inputelements"> 
+                
+                <input  class="line" type="text" name="SEARCH"  placeholder="SEARCH">
+                <i class="fa fa-search" style="color:white;margin-left: -15px"></i>
+        
+        
+        <div class="bottomheadericons">
+                <i class="fa fa-align-center" style="margin-right:60%;color:white"></i>
+                
+                <span class="filter" onclick="popup()">FILTER </span>
+                <div id="myFilter" class="filter-content">
+                                 <a href="#XtraSmall">XtraSmall</a>
+                                <a href="#small">small</a>
+                             <a href="#large">Large</a> 
+                             
+                </div>
+                
+            </div>
+        </div>
+        </div>
+
+        
+        <div class="BottomContainer">
+         <div>
+                <i class="fa fa-square-o" style="margin-left:1%;background-color:#e20074"></i>
+         <p class="jobheading">BASED ON LAST FEW JOBS YOU CREATED</p> 
+        </div>
+        
+        <div class="jobalertcontainer">
+        <div class="box boxspace">
+                <span class="star starblack" onclick="starcolor()" id="strclr">&#9733;</span>
+            <p class="finance">FINANCE</p>
+            <p class="ele1">IDW_TD_TDL_SAM_SOC</p>
+            <div class="box1">
+                <div class="eri">
+                        <p class="ele2">Ericson</p>
+                </div>
+                 <div class="empty">
+                    
+                </div>
+                    <div class="hive">
+                            <p class="ele3">Hive_Hadoop</p> 
+                    </div>
+                   
+            </div>
+            <div class="subclass">
+            <div class="box2">
+
+                    <p class="ele4">NA248C83C</p>
+                    <p class="ele4">Type 1</p>
+                    <p class="ele4">Robert Stone</p>
+                   
+            </div>
+            <div class="box3">
+                    <p class="ele5">5/21/17</p> 
+                    <p class="ele5">09:21</p>
+                    <p class="ele6 ele10"></p>
+
+            </div>
+            </div>
+           
+
+        </div>
+        <div class="box" >
+                <span class="star starblack" onclick="starcolor()">&#9733;</span>
+            <p class="finance">FINANCE</p>
+            <p class="ele1">IDW_TD_TDL_SAM_SOC</p>
+            <div class="box1">
+                <div class="eri">
+                        <p class="ele2">Ericson</p>
+                </div>
+                <div class="empty">
+                    
+                    </div> 
+                    <div class="hive">
+                            <p class="ele3">Hive_Hadoop</p> 
+                    </div>
+                   
+            </div>
+            <div class="subclass">
+            <div class="box2">
+
+                    <p class="ele4">NA248C83C</p>
+                    <p class="ele4">Type 1</p>
+                    <p class="ele4">Lauren Mie</p>
+                   
+            </div>
+            <div class="box3">
+                    <p class="ele5">5/21/17</p> 
+                    <p class="ele5">09:21</p>
+                    <p class="ele6 ele10"></p>
+
+            </div>
+           
+</div>
+        </div>
+            <div class="box">
+                    <span class="star starblack" onclick="starcolor()">&#9733;</span>
+                    <p class="finance">FINANCE</p>
+                    <p class="ele1">IDW_TD_TDL_SAM_SOC</p>
+                    <div class="box1">
+                            <div class="eri">
+                                <p class="ele2">Ericson</p>
+                            </div>
+                            <div class="empty">
+                    
+                            </div> 
+                            <div class="hive">
+                                    <p class="ele3">Hive_Hadoop</p> 
+                            </div>
+                           
+                    </div>
+                    <div class="subclass">
+                    <div class="box2">
+
+                            <p class="ele4">NA248C83C</p>
+                            <p class="ele4">Type 1</p>
+                            <p class="ele4">Scott Davidson</p>
+                           
+                    </div>
+                    <div class="box3">
+                            <p class="ele5">5/21/17</p> 
+                            <p class="ele5">09:21</p>
+                            <p class="ele6 ele11"></p>
+        
+                    </div>
+                </div>
+        
+                </div>
+        <div class="box">
+                        <span class="star starblack" onclick="starcolor()">&#9733;</span>
+                        <p class="finance">FINANCE</p>
+            <p class="ele1">IDW_TD_TDL_SAM_SOC</p>
+            <div class="box1">
+                <div class="eri">
+                        <p class="ele2">Ericson</p>
+                </div>
+                <div class="empty">
+                    
+                </div> 
+                 <div class="hive">
+                            <p class="ele3">Hive_Hadoop</p> 
+                </div>
+                   
+            </div>
+            <div class="subclass">
+            <div class="box2">
+
+                    <p class="ele4">NA248C83C</p>
+                    <p class="ele4">Type 1</p>
+                    <p class="ele4">Cheryl Carr</p>
+                   
+            </div>
+            <div class="box3">
+                    <p class="ele5">5/21/17</p> 
+                    <p class="ele5">09:21</p>
+                    <p class="ele6 ele10"></p>
+
+            </div>
+           
+          </div>
+        </div>
+        
+        <div class="box boxspace" onclick="starcolor()">
+                <span class="star starblack">&#9733;</span>
+                <p class="finance">FINANCE</p>
+                <p class="ele1">IDW_TD_TDL_SAM_SOC</p>
+                <div class="box1">
+                    <div class="eri">
+                            <p class="ele2">Ericson</p>
+                    </div>
+                    <div class="empty">
+                    
+                    </div> 
+                    <div class="hive">
+                                <p class="ele3">Hive_Hadoop</p> 
+                    </div>
+                       
+                </div>
+                <div class="subclass">
+                <div class="box2">
+
+                        <p class="ele4">NA248C83C</p>
+                        <p class="ele4">Type 1</p>
+                        <p class="ele4">Randy Vasquez</p>
+                       
+                </div>
+                <div class="box3">
+                        <p class="ele5">5/21/17</p> 
+                        <p class="ele5">09:21</p>
+                        <p class="ele6 ele11"></p>
+    
+                </div>
+               </div>
+            </div>
+            <div class="box">
+                    <span class="star starblack" onclick="starcolor()">&#9733;</span>
+                    <p class="finance">FINANCE</p>
+                    <p class="ele1">IDW_TD_TDL_SAM_SOC</p>
+                    <div class="box1">
+                        <div class="eri">
+                                <p class="ele2">Ericson</p>
+                        </div>
+                        <div class="empty">
+                    
+                        </div> 
+                        <div class="hive">
+                                <p class="ele3">Hive_Hadoop</p> 
+                        </div>
+                           
+                    </div>
+                    <div class="subclass">
+                    <div class="box2">
+
+                            <p class="ele4">NA248C83C</p>
+                            <p class="ele4">Type 1</p>
+                            <p class="ele4">Janice Williamson</p>
+                           
+                    </div>
+                    <div class="box3">
+                            <p class="ele5">5/21/17</p> 
+                            <p class="ele5">09:21</p>
+                           
+                            <p class="ele6 ele10"></p>
+        
+                    </div>
+                    </div>
+                </div> 
+                <div class="box">
+                        <span class="star starblack" onclick="starcolor()">&#9733;</span>
+                        <p class="finance">FINANCE</p>
+                        <p class="ele1">IDW_TD_TDL_SAM_SOC</p>
+                        <div class="box1">
+                            <div class="eri">
+                                    <p class="ele2">Ericson</p>
+                            </div>
+                            <div class="empty">
+                    
+                           </div> 
+                           <div class="hive">
+                                    <p class="ele3">Hive_Hadoop</p> 
+                           </div>
+                               
+                        </div>
+                        <div class="subclass">
+                        <div class="box2">
+
+                                <p class="ele4">NA248C83C</p>
+                                <p class="ele4">Type 1</p>
+                                <p class="ele4">Brenda Palmer</p>
+                               
+                        </div>
+                        <div class="box3">
+                                <p class="ele5">5/21/17</p> 
+                                <p class="ele5">09:21</p>
+                                <p class="ele6 ele10"></p>
+            
+                        </div>
+                        </div>
+                    </div> 
+                    <div class="box">
+                            <span class="star starblack" onclick="starcolor()">&#9733;</span>
+                            <p class="finance">FINANCE</p>
+                            <p class="ele1">IDW_TD_TDL_SAM_SOC</p>
+                            <div class="box1">
+                                <div class="eri">
+                                        <p class="ele2">Ericson</p>
+                                </div>
+                                <div class="empty">
+                    
+                                </div> 
+                                <div class="hive">
+                                            <p class="ele3">Hive_Hadoop</p> 
+                                </div>
+                                   
+                            </div>
+                            <div class="subclass">
+                            <div class="box2">
+
+                                    <p class="ele4">NA248C83C</p>
+                                    <p class="ele4">Type 1</p>
+                                    <p class="ele4">Virginia Watkins</p>
+                                   
+                            </div>
+                            <div class="box3">
+                                    <p class="ele5">5/21/17</p> 
+                                    <p class="ele5">09:21</p>
+                                    <p class="ele6 ele10"></p>
+                
+                            </div>
+                            </div>
+                        </div> 
+                        <div class="box22">
+                                <span class="star starblack" onclick="starcolor()">&#9733;</span>
+                                <p class="finance">FINANCE</p>
+                                <p class="ele1">IDW_TD_TDL_SAM_SOC</p>
+                    </div> 
+                    <div class="box22" style="margin-left:2%">
+                            <span class="star starblack" onclick="starcolor()">&#9733;</span>
+                            <p class="finance">FINANCE</p>
+                            <p class="ele1">IDW_TD_TDL_SAM_SOC</p>
+                    </div> 
+        </div>
+        </div>
+</div>
+    </body>
+    <script>
+                // function popup(){
+                //          document.getElementById("myFilter").classList.toggle("show");
+
+                // } 
+               
+                </script>
+                <script>
+                        // function starcolor(){
+                                
+                        //         var element =document.getElementById("strclr");
+                                
+                        //         event.currentTarget.classList.toggle("color");
+                        // }
+                </script>
+               <script>
+//                        document.getElementById("myBtn").addEventListener("click", toggleNav);
+//                        function toggleNav(){
+//     navSize = document.getElementById("mySidenav").style.width;
+//     if (navSize == 250) {
+//         return closeNav();
+//     }
+//     return openNav();
+                //         function openNav() {
+                //             document.getElementById("mySidenav").style.width = "150px";
+                          
+                //         }
+                        
+                //         function closeNav() {
+                //             document.getElementById("mySidenav").style.width = "0";
+                            
+                //         }
+                      
+                                                               
+                //  </script>
+                //                          <script>
+                                       
+                //                                 var header = document.getElementById("browseid");
+                //                                 var btns = header.getElementsByClassName("browseblock");
+                //                                 for (var i = 0; i < btns.length; i++) {
+                //                                   btns[i].addEventListener("click", function() {
+                //                                     var current = document.getElementsByClassName("active1");
+                //                                     current[0].className = current[0].className.replace(" active1", "");
+                //                                     this.className += " active1";
+                //                                   });
+                //                                 }
+                //                                 </script>
+
+                //         <script>
+                                       
+                //                         var header = document.getElementById("myId");
+                //                         var btns = header.getElementsByClassName("block");
+                //                         for (var i = 0; i < btns.length; i++) {
+                //                           btns[i].addEventListener("click", function() {
+                //                             var current = document.getElementsByClassName("active");
+                //                             current[0].className = current[0].className.replace(" active", "");
+                //                             this.className += " active";
+                //                           });
+                //                         }
+                //                         </script>
+</html>
